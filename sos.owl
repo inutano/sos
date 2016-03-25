@@ -1,0 +1,584 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://webprotege.stanford.edu/project/9OWgSorYD7Cc8JPNjFxUZP#"
+     xml:base="http://webprotege.stanford.edu/project/9OWgSorYD7Cc8JPNjFxUZP"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://webprotege.stanford.edu/project/9OWgSorYD7Cc8JPNjFxUZP"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#hasMatrix -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/01/quanto/sos#hasMatrix">
+        <rdfs:label>hasMatrix</rdfs:label>
+        <rdfs:range rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsReport"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#adenineContent -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#adenineContent">
+        <rdfs:label>adenineContent</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#base -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#base">
+        <rdfs:label>base</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#baseCallQuality -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#baseCallQuality">
+        <rdfs:label>baseCallQuality</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#basePositionEnd -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#basePositionEnd">
+        <rdfs:label>basePositionEnd</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#basePositionStart -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#basePositionStart">
+        <rdfs:label>basePositionStart</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#count -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#count">
+        <rdfs:label>count</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#cytosineContent -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#cytosineContent">
+        <rdfs:label>cytosineContent</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#duplicationLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#duplicationLevel">
+        <rdfs:label>duplicationLevel</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#filename -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#filename">
+        <rdfs:label>filename</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#gcContent -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#gcContent">
+        <rdfs:label>gcContent</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#glycineContent -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#glycineContent">
+        <rdfs:label>glycineContent</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#length -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#length">
+        <rdfs:label>length</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#lowerQuartile -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#lowerQuartile">
+        <rdfs:label>lowerQuartile</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#mean -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#mean">
+        <rdfs:label>mean</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#meanBaseCallQuality -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#meanBaseCallQuality">
+        <rdfs:label>meanBaseCallQuality</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#median -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#median">
+        <rdfs:label>median</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#medianBaseCallQuality -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#medianBaseCallQuality">
+        <rdfs:label>medianBaseCallQuality</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#nCount -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#nCount">
+        <rdfs:label>nCount</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#percentGC -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#percentGC">
+        <rdfs:label>percentGC</rdfs:label>
+        <rdfs:label>%GC</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#percentage -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#percentage">
+        <rdfs:label>percentage</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#possibleSource -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#possibleSource">
+        <rdfs:label>possibleSource</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#quality -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#quality">
+        <rdfs:label>quality</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#relativeCount -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#relativeCount">
+        <rdfs:label>relativeCount</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#rowIndex -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#rowIndex">
+        <rdfs:label>rowIndex</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#sequence -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#sequence">
+        <rdfs:label>sequence</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#thymineContent -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#thymineContent">
+        <rdfs:label>thymineContent</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#upperQuartile -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#upperQuartile">
+        <rdfs:label>upperQuartile</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#10thPercentile -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#10thPercentile">
+        <rdfs:label>10thPercentile</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#90thPercentile -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#90thPercentile">
+        <rdfs:label>90thPercentile</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#maxObs%2FExpPosition -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#maxObs%2FExpPosition">
+        <rdfs:label>maxObs/ExpPosition</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#obs%2FExpMax -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#obs%2FExpMax">
+        <rdfs:label>obs/ExpMax</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#obs%2FExpOverall -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#obs%2FExpOverall">
+        <rdfs:label>obs/ExpOverall</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#BaseRangeStatistics -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#BaseRangeStatistics">
+        <rdfs:label>BaseRangeStatistics</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#ExactBaseStatistics -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#ExactBaseStatistics">
+        <rdfs:label>ExactBaseStatistics</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix">
+        <rdfs:label>FastQCStatisticsMatrix</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#KmerContent -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#KmerContent">
+        <rdfs:label>KmerContent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#NucleotideBaseContent -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#NucleotideBaseContent">
+        <rdfs:label>NucleotideBaseContent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#OverrepresentedSequences -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#OverrepresentedSequences">
+        <rdfs:label>OverrepresentedSequences</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#PerBaseNContent -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#PerBaseNContent">
+        <rdfs:label>PerBaseNContent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#PerBaseSequenceContent -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#PerBaseSequenceContent">
+        <rdfs:label>PerBaseSequenceContent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#PerBaseSequenceQuality -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#PerBaseSequenceQuality">
+        <rdfs:label>PerBaseSequenceQuality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#PerSequenceGCContent -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#PerSequenceGCContent">
+        <rdfs:label>PerSequenceGCContent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#PerSequnceQualityScores -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#PerSequnceQualityScores">
+        <rdfs:label>PerSequnceQualityScores</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#PerTileSequenceQuality -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#PerTileSequenceQuality">
+        <rdfs:label>PerTileSequenceQuality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#PhredQualityScore -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#PhredQualityScore">
+        <rdfs:label>PhredQualityScore</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#Row -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#Row">
+        <rdfs:label>Row</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#SequenceDuplicationLevel -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#SequenceDuplicationLevel">
+        <rdfs:label>SequenceDuplicationLevel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#SequenceDuplicationLevels -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#SequenceDuplicationLevels">
+        <rdfs:label>SequenceDuplicationLevels</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#SequenceLengthDistribution -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#SequenceLengthDistribution">
+        <rdfs:label>SequenceLengthDistribution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#SequenceReadContent -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#SequenceReadContent">
+        <rdfs:label>SequenceReadContent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#SequenceReadLength -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#SequenceReadLength">
+        <rdfs:label>SequenceReadLength</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix">
+        <rdfs:label>SequenceStatisticsMatrix</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#SequenceStatisticsReport -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsReport">
+        <rdfs:label>SequenceStatisticsReport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/01/quanto/sos#TotalDuplicatePercentage -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#TotalDuplicatePercentage">
+        <rdfs:label>TotalDuplicatePercentage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
