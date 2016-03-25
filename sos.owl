@@ -81,6 +81,9 @@
         <Class IRI="#SequenceDuplicationLevels"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#fastqcVersion"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PerBaseSequenceContent"/>
     </Declaration>
     <Declaration>
