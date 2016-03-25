@@ -1,584 +1,468 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://webprotege.stanford.edu/project/9OWgSorYD7Cc8JPNjFxUZP#"
-     xml:base="http://webprotege.stanford.edu/project/9OWgSorYD7Cc8JPNjFxUZP"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://purl.jp/bio/01/quanto/sos"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://webprotege.stanford.edu/project/9OWgSorYD7Cc8JPNjFxUZP"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#hasMatrix -->
-
-    <owl:ObjectProperty rdf:about="http://purl.jp/bio/01/quanto/sos#hasMatrix">
-        <rdfs:label>hasMatrix</rdfs:label>
-        <rdfs:range rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsReport"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#adenineContent -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#adenineContent">
-        <rdfs:label>adenineContent</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#base -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#base">
-        <rdfs:label>base</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#baseCallQuality -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#baseCallQuality">
-        <rdfs:label>baseCallQuality</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#basePositionEnd -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#basePositionEnd">
-        <rdfs:label>basePositionEnd</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#basePositionStart -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#basePositionStart">
-        <rdfs:label>basePositionStart</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#count -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#count">
-        <rdfs:label>count</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#cytosineContent -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#cytosineContent">
-        <rdfs:label>cytosineContent</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#duplicationLevel -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#duplicationLevel">
-        <rdfs:label>duplicationLevel</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#filename -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#filename">
-        <rdfs:label>filename</rdfs:label>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#gcContent -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#gcContent">
-        <rdfs:label>gcContent</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#glycineContent -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#glycineContent">
-        <rdfs:label>glycineContent</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#length -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#length">
-        <rdfs:label>length</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#lowerQuartile -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#lowerQuartile">
-        <rdfs:label>lowerQuartile</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#mean -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#mean">
-        <rdfs:label>mean</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#meanBaseCallQuality -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#meanBaseCallQuality">
-        <rdfs:label>meanBaseCallQuality</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#median -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#median">
-        <rdfs:label>median</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#medianBaseCallQuality -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#medianBaseCallQuality">
-        <rdfs:label>medianBaseCallQuality</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#nCount -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#nCount">
-        <rdfs:label>nCount</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#percentGC -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#percentGC">
-        <rdfs:label>percentGC</rdfs:label>
-        <rdfs:label>%GC</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#percentage -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#percentage">
-        <rdfs:label>percentage</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#possibleSource -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#possibleSource">
-        <rdfs:label>possibleSource</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#quality -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#quality">
-        <rdfs:label>quality</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#relativeCount -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#relativeCount">
-        <rdfs:label>relativeCount</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#rowIndex -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#rowIndex">
-        <rdfs:label>rowIndex</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#sequence -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#sequence">
-        <rdfs:label>sequence</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#thymineContent -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#thymineContent">
-        <rdfs:label>thymineContent</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#upperQuartile -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#upperQuartile">
-        <rdfs:label>upperQuartile</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#10thPercentile -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#10thPercentile">
-        <rdfs:label>10thPercentile</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#90thPercentile -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#90thPercentile">
-        <rdfs:label>90thPercentile</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#maxObs%2FExpPosition -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#maxObs%2FExpPosition">
-        <rdfs:label>maxObs/ExpPosition</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#obs%2FExpMax -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#obs%2FExpMax">
-        <rdfs:label>obs/ExpMax</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#obs%2FExpOverall -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/01/quanto/sos#obs%2FExpOverall">
-        <rdfs:label>obs/ExpOverall</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#BaseRangeStatistics -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#BaseRangeStatistics">
-        <rdfs:label>BaseRangeStatistics</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#ExactBaseStatistics -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#ExactBaseStatistics">
-        <rdfs:label>ExactBaseStatistics</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix">
-        <rdfs:label>FastQCStatisticsMatrix</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#KmerContent -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#KmerContent">
-        <rdfs:label>KmerContent</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#NucleotideBaseContent -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#NucleotideBaseContent">
-        <rdfs:label>NucleotideBaseContent</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#OverrepresentedSequences -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#OverrepresentedSequences">
-        <rdfs:label>OverrepresentedSequences</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#PerBaseNContent -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#PerBaseNContent">
-        <rdfs:label>PerBaseNContent</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#PerBaseSequenceContent -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#PerBaseSequenceContent">
-        <rdfs:label>PerBaseSequenceContent</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#PerBaseSequenceQuality -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#PerBaseSequenceQuality">
-        <rdfs:label>PerBaseSequenceQuality</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#PerSequenceGCContent -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#PerSequenceGCContent">
-        <rdfs:label>PerSequenceGCContent</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#PerSequnceQualityScores -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#PerSequnceQualityScores">
-        <rdfs:label>PerSequnceQualityScores</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#PerTileSequenceQuality -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#PerTileSequenceQuality">
-        <rdfs:label>PerTileSequenceQuality</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#PhredQualityScore -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#PhredQualityScore">
-        <rdfs:label>PhredQualityScore</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#Row -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#Row">
-        <rdfs:label>Row</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#SequenceDuplicationLevel -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#SequenceDuplicationLevel">
-        <rdfs:label>SequenceDuplicationLevel</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#SequenceDuplicationLevels -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#SequenceDuplicationLevels">
-        <rdfs:label>SequenceDuplicationLevels</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#SequenceLengthDistribution -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#SequenceLengthDistribution">
-        <rdfs:label>SequenceLengthDistribution</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#SequenceReadContent -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#SequenceReadContent">
-        <rdfs:label>SequenceReadContent</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#SequenceReadLength -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#SequenceReadLength">
-        <rdfs:label>SequenceReadLength</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsMatrix">
-        <rdfs:label>SequenceStatisticsMatrix</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#SequenceStatisticsReport -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#SequenceStatisticsReport">
-        <rdfs:label>SequenceStatisticsReport</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.jp/bio/01/quanto/sos#TotalDuplicatePercentage -->
-
-    <owl:Class rdf:about="http://purl.jp/bio/01/quanto/sos#TotalDuplicatePercentage">
-        <rdfs:label>TotalDuplicatePercentage</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/01/quanto/sos#FastQCStatisticsMatrix"/>
-    </owl:Class>
-</rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://purl.jp/bio/01/quanto/sos"
+     versionIRI="http://purl.jp/bio/01/quanto/sos/0.1.0">
+    <Prefix name="" IRI="http://purl.jp/bio/01/quanto/sos#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Ontology terms for statistics of high-throughput sequencing data.</Literal>
+    </Annotation>
+    <Declaration>
+        <ObjectProperty IRI="#kmerSequence"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rowIndex"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fileType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhredQualityScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minSequenceLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#filename"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#baseCallQualityLowerQuartile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#medianBaseCallQuality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#meanSequenceLength"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#percentThymine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sequenceLength"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMatrix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BaseRangeStatistics"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#baseCallQuality90thPercentile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerBaseNContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FastQCStatisticsMatrix"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#baseCallQualityUpperQuartile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OverrepresentedSequences"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SequenceDuplicationLevels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerBaseSequenceContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerSequenceGCContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerTileSequenceQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SequenceStatisticsReport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#observedPerExpectedOverall"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#medianSequenceLength"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#meanBaseCallQuality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#overrepresentedSequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SequenceReadContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Row"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sequenceReadLength"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#overallMeanBaseCallQuality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#baseCallQuality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#overallNContent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#percentGC"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#baseCallQuality10thPercentile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sequenceReadPercentage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#possibleSourceOfSequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerBaseSequenceQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KmerContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TotalDuplicatePercentage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#basePosition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#filteredSequences"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#observedPerExpectedMaxPosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SequenceStatisticsMatrix"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#encoding"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#observedPerExpectedMax"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#overallMedianBaseCallQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExactBaseStatistics"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#percentGuanine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#nCount"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sequenceDuplicationLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#percentAdenine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#totalSequences"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sequenceReadRelativeCount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SequenceDuplicationLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SequenceReadLength"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SequenceLengthDistribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerSequnceQualityScores"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maxSequenceLength"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NucleotideBaseContent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sequenceReadCount"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#percentCytosine"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#BaseRangeStatistics"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExactBaseStatistics"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FastQCStatisticsMatrix"/>
+        <Class IRI="#SequenceStatisticsMatrix"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KmerContent"/>
+        <Class IRI="#FastQCStatisticsMatrix"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NucleotideBaseContent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OverrepresentedSequences"/>
+        <Class IRI="#FastQCStatisticsMatrix"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerBaseNContent"/>
+        <Class IRI="#FastQCStatisticsMatrix"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerBaseSequenceContent"/>
+        <Class IRI="#FastQCStatisticsMatrix"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerBaseSequenceQuality"/>
+        <Class IRI="#FastQCStatisticsMatrix"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerSequenceGCContent"/>
+        <Class IRI="#FastQCStatisticsMatrix"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerSequnceQualityScores"/>
+        <Class IRI="#FastQCStatisticsMatrix"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerTileSequenceQuality"/>
+        <Class IRI="#FastQCStatisticsMatrix"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhredQualityScore"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Row"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SequenceDuplicationLevel"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SequenceDuplicationLevels"/>
+        <Class IRI="#FastQCStatisticsMatrix"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SequenceLengthDistribution"/>
+        <Class IRI="#FastQCStatisticsMatrix"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SequenceReadContent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SequenceReadLength"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SequenceStatisticsMatrix"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SequenceStatisticsReport"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TotalDuplicatePercentage"/>
+        <Class IRI="#FastQCStatisticsMatrix"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMatrix"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMatrix"/>
+        <Class IRI="#SequenceStatisticsReport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMatrix"/>
+        <Class IRI="#SequenceStatisticsMatrix"/>
+    </ObjectPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#basePosition"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#encoding"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fileType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#filename"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maxSequenceLength"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#meanSequenceLength"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#medianSequenceLength"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#minSequenceLength"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rowIndex"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BaseRangeStatistics</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BaseRangeStatistics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ExactBaseStatistics</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ExactBaseStatistics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FastQCStatisticsMatrix</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FastQCStatisticsMatrix</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#KmerContent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">KmerContent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NucleotideBaseContent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NucleotideBaseContent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OverrepresentedSequences</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OverrepresentedSequences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PerBaseNContent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PerBaseNContent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PerBaseSequenceContent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PerBaseSequenceContent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PerBaseSequenceQuality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PerBaseSequenceQuality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PerSequenceGCContent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PerSequenceGCContent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PerSequnceQualityScores</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PerSequnceQualityScores</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PerTileSequenceQuality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PerTileSequenceQuality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhredQualityScore</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PhredQualityScore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Row</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Row</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SequenceDuplicationLevel</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SequenceDuplicationLevel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SequenceDuplicationLevels</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SequenceDuplicationLevels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SequenceLengthDistribution</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SequenceLengthDistribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SequenceReadContent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SequenceReadContent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SequenceReadLength</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SequenceReadLength</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SequenceStatisticsMatrix</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SequenceStatisticsMatrix</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SequenceStatisticsReport</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SequenceStatisticsReport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TotalDuplicatePercentage</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TotalDuplicatePercentage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasMatrix</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasMatrix</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
 
