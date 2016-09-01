@@ -5,8 +5,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://purl.jp/bio/01/quanto/sos"
-     versionIRI="http://purl.jp/bio/01/quanto/sos/0.1.0">
+     ontologyIRI="http://purl.jp/bio/01/quanto/sos">
     <Prefix name="" IRI="http://purl.jp/bio/01/quanto/sos"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -16,6 +15,10 @@
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Ontology terms for statistics of high-throughput sequencing data.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;0.2.0&quot;</Literal>
     </Annotation>
     <Declaration>
         <DataProperty IRI="#fastqcVersion"/>
