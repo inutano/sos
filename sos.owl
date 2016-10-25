@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://purl.jp/bio/01/quanto/sos">
-    <Prefix name="" IRI="http://purl.jp/bio/01/quanto/sos"/>
+    <Prefix name="" IRI="http://purl.jp/bio/01/quanto/sos#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -103,8 +103,124 @@
         <Class IRI="#SequenceStatisticsReport"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#filteredSequences"/>
+        <Class IRI="#SequenceStatisticsReport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasUnit"/>
+        <Class IRI="#BaseRatio"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasUnit"/>
+        <Class IRI="#PhredQualityScore"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasUnit"/>
+        <Class IRI="#SequenceReadAmount"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasUnit"/>
+        <Class IRI="#SequenceReadLength"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#maxSequenceLength"/>
+        <Class IRI="#SequenceStatisticsReport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#meanSequenceLength"/>
+        <Class IRI="#SequenceStatisticsReport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#medianSequenceLength"/>
+        <Class IRI="#SequenceStatisticsReport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#minSequenceLength"/>
+        <Class IRI="#SequenceStatisticsReport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#overallMeanBaseCallQuality"/>
+        <Class IRI="#SequenceStatisticsReport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#overallMedianBaseQuality"/>
+        <Class IRI="#SequenceStatisticsReport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#overallNContent"/>
+        <Class IRI="#SequenceStatisticsReport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#percentGC"/>
+        <Class IRI="#SequenceStatisticsReport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#totalSequences"/>
+        <Class IRI="#SequenceStatisticsReport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#filteredSequences"/>
+        <Class IRI="#SequenceReadAmount"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#maxSequenceLength"/>
+        <Class IRI="#SequenceReadLength"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#meanSequenceLength"/>
+        <Class IRI="#SequenceReadLength"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#medianSequenceLength"/>
+        <Class IRI="#SequenceReadLength"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#minSequenceLength"/>
+        <Class IRI="#SequenceReadLength"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#overallMeanBaseCallQuality"/>
+        <Class IRI="#PhredQualityScore"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#overallMedianBaseQuality"/>
+        <Class IRI="#PhredQualityScore"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#overallNContent"/>
+        <Class IRI="#SequenceReadAmount"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#percentGC"/>
+        <Class IRI="#BaseRatio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#totalSequences"/>
+        <Class IRI="#SequenceReadAmount"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#encoding"/>
+        <Class IRI="#SequenceStatisticsReport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fastqcVersion"/>
+        <Class IRI="#SequenceStatisticsReport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fileType"/>
+        <Class IRI="#SequenceStatisticsReport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#filename"/>
+        <Class IRI="#SequenceStatisticsReport"/>
+    </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#encoding"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fastqcVersion"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
