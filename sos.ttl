@@ -19,6 +19,30 @@
                                     dcterms:license "http://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI .
 
 #################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+#################################################################
 #    Data properties
 #################################################################
 
@@ -42,7 +66,7 @@
 :fileType rdf:type owl:DatatypeProperty ;
           rdfs:domain :SequenceStatisticsReport ;
           rdfs:range xsd:string ;
-          dcterms:description "A relation between a SequenceStatisticsReport and a file type of the calculated FASTQ file that represents whether its content is base call or colorspace."@en ;
+          dcterms:description "A relation between a SequenceStatisticsReport and the file type of the FASTQ file (e.g. base call or colorspace)."@en ;
           rdfs:label "file type" .
 
 
@@ -50,7 +74,7 @@
 :filename rdf:type owl:DatatypeProperty ;
           rdfs:domain :SequenceStatisticsReport ;
           rdfs:range xsd:string ;
-          dcterms:description "A relation between a SequenceStatisticsReport and a name of the file that contained the sequencing data calculated statistics."@en ;
+          dcterms:description "A relation between a Sequence Statistics Report and the name of the file that contains the sequencing data."@en ;
           rdfs:label "filename" .
 
 
@@ -129,7 +153,7 @@
 ###  http://purl.jp/bio/01/quanto/sos#medianBaseCallQuality
 :medianBaseCallQuality rdf:type owl:Class ;
                        rdfs:subClassOf :PhredQualityScore ;
-                       dcterms:description "A Median Base Call Quality is a sequence quality that represents the median value of Phred quality score in the all base calls of a sequence data." ;
+                       dcterms:description "A Median Base Call Quality is a sequence statistic that represents the median value of Phred quality score in the all base calls of a sequence data." ;
                        rdfs:label "Median Base Call Quality" .
 
 
