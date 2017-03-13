@@ -8,12 +8,11 @@
 @base <http://purl.jp/bio/01/quanto/sos> .
 
 <http://purl.jp/bio/01/quanto/sos> rdf:type owl:Ontology ;
-                                    owl:imports <http://dublincore.org/2012/06/14/dcterms.rdf> ;
-                                    dc:description "The sequence statistics ontology (SOS) provides an ontology for statistics of high-throughput DNA sequencing data, including number of sequence reads, length of sequence reads, and base call accuracy."@en ;
                                     dc:creator "Tazro Ohta"@en ;
                                     dc:modified "2017-02-28" ;
+                                    dc:description "The sequence statistics ontology (SOS) provides terms for statistics of high-throughput DNA sequencing data, including number of sequence reads, length of sequence reads, and base call accuracy."@en ;
+                                    dc:rights "free to use, share, modify. modify with attribution [http://creativecommons.org/licenses/by/4.0/]." ;
                                     owl:versionInfo "\"0.3.0\"" ;
-                                    dc:rights "free to use,share,modify. modify with attribution [http://creativecommons.org/licenses/by/4.0/]." ;
                                     dc:title "Sequence Statistics Ontology (SOS)" ;
                                     dc:license "http://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI .
 
@@ -45,6 +44,30 @@
 
 ###  http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dc:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dc:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+dc:rights rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dc:title rdf:type owl:AnnotationProperty .
 
 
 #################################################################

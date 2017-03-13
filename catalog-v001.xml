@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1488340060275" name="http://purl.jp/bio/01/quanto/sos" uri="sos.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1488340060275" name="http://webprotege.stanford.edu/project/9OWgSorYD7Cc8JPNjFxUZP" uri="src/ngs-read-statistics-ontology-ontologies-owl-REVISION-168/root-ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1489373968011" name="http://purl.jp/bio/01/quanto/sos" uri="sos.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1489373968011" name="http://webprotege.stanford.edu/project/9OWgSorYD7Cc8JPNjFxUZP" uri="src/ngs-read-statistics-ontology-ontologies-owl-REVISION-168/root-ontology.owl"/>
     </group>
 </catalog>

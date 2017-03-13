@@ -13,11 +13,6 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://dublincore.org/2012/06/14/dcterms.rdf</Import>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The sequence statistics ontology (SOS) provides an ontology for statistics of high-throughput DNA sequencing data, including number of sequence reads, length of sequence reads, and base call accuracy.</Literal>
-    </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tazro Ohta</Literal>
@@ -27,12 +22,16 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2017-02-28</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;0.3.0&quot;</Literal>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The sequence statistics ontology (SOS) provides terms for statistics of high-throughput DNA sequencing data, including number of sequence reads, length of sequence reads, and base call accuracy.</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:rights"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">free to use,share,modify. modify with attribution [http://creativecommons.org/licenses/by/4.0/].</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">free to use, share, modify. modify with attribution [http://creativecommons.org/licenses/by/4.0/].</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;0.3.0&quot;</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -43,10 +42,10 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://creativecommons.org/licenses/by/4.0/</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#BaseRatio"/>
+        <Class IRI="#medianSequenceLength"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#medianSequenceLength"/>
+        <Class IRI="#BaseRatio"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#fileType"/>
@@ -59,6 +58,12 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:rights"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
     </Declaration>
     <Declaration>
         <Class IRI="#filteredSequences"/>
@@ -100,7 +105,13 @@
         <Class IRI="#percentGC"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SequenceStatisticsReport"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:modified"/>
     </Declaration>
     <Declaration>
         <Class IRI="#nContent"/>
@@ -118,25 +129,13 @@
         <Class IRI="#SequenceQuality"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:license"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#meanSequenceLength"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:license"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:rights"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:modified"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:creator"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#BaseRatio"/>
