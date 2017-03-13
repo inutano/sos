@@ -85,110 +85,110 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://purl.jp/bio/01/quanto/sos#BaseRatio
 :BaseRatio rdf:type owl:Class ;
            rdfs:subClassOf :SequenceQuality ;
-           dcterms:description "A Base Ratio is a sequence statistic described by ratio in nucleotide base resolution." ;
+           dcterms:description "A BaseRatio is a sequence statistic described by ratio in nucleotide base resolution." ;
            rdfs:label "Base Ratio" .
 
 
 ###  http://purl.jp/bio/01/quanto/sos#PhredQualityScore
 :PhredQualityScore rdf:type owl:Class ;
                    rdfs:subClassOf :SequenceQuality ;
-                   dcterms:description "A Phred Quality Score is a sequence statistic that represents accuracy of base call of DNA sequencing data in Phred quality score." ;
+                   dcterms:description "A PhredQuality Score is a sequence statistic that represents accuracy of base call of DNA sequencing data in Phred quality score." ;
                    rdfs:label "Phred Quality Score" .
 
 
 ###  http://purl.jp/bio/01/quanto/sos#SequenceQuality
 :SequenceQuality rdf:type owl:Class ;
-                 dcterms:description "A Sequence Quality is an attribute that is associated with a quantitative value calculated from high-throughput sequencing data." ;
+                 dcterms:description "A SequenceQuality is an attribute that is associated with a quantitative value calculated from high-throughput sequencing data." ;
                  rdfs:label "Sequence Quality" .
 
 
 ###  http://purl.jp/bio/01/quanto/sos#SequenceReadAmount
 :SequenceReadAmount rdf:type owl:Class ;
                     rdfs:subClassOf :SequenceQuality ;
-                    dcterms:description "A Sequence Read Amount is a sequence statistic that represents number of sequence reads." ;
+                    dcterms:description "A SequenceReadAmount is a sequence statistic that represents number of sequence reads." ;
                     rdfs:label "Sequence Read Amount" .
 
 
 ###  http://purl.jp/bio/01/quanto/sos#SequenceReadLength
 :SequenceReadLength rdf:type owl:Class ;
                     rdfs:subClassOf :SequenceQuality ;
-                    dcterms:description "A Sequence Read Length is a sequence statistic that represents length of sequence read." ;
+                    dcterms:description "A SequenceReadLength is a sequence statistic that represents length of sequence read." ;
                     rdfs:label "Sequence Read Length" .
 
 
 ###  http://purl.jp/bio/01/quanto/sos#SequenceStatisticsReport
 :SequenceStatisticsReport rdf:type owl:Class ;
-                          dcterms:description "Sequence Statistics Report is an entity that contains the summary of quantitative information of DNA sequencing data." ;
+                          dcterms:description "SequenceStatistics Report is an entity that contains the summary of quantitative information of DNA sequencing data." ;
                           rdfs:label "Sequence Statistics Report" .
 
 
 ###  http://purl.jp/bio/01/quanto/sos#filteredSequences
 :filteredSequences rdf:type owl:Class ;
                    rdfs:subClassOf :SequenceReadAmount ;
-                   dcterms:description "A Filtered Sequences is a sequence statistic that represents the amount of sequence reads filtered during the sequence statistics calculation." ;
+                   dcterms:description "A filteredSequences is a sequence statistic that represents the amount of sequence reads filtered during the sequence statistics calculation." ;
                    rdfs:label "Filtered Sequences" .
 
 
 ###  http://purl.jp/bio/01/quanto/sos#maxSequenceLength
 :maxSequenceLength rdf:type owl:Class ;
                    rdfs:subClassOf :SequenceReadLength ;
-                   dcterms:description "A Maximum Sequence Length is a sequence statistic that represents the maximum length of sequence reads in a sequencing data." ;
+                   dcterms:description "A maxSequenceLength is a sequence statistic that represents the maximum length of sequence reads in a sequencing data." ;
                    rdfs:label "Maximum Sequence Length" .
 
 
 ###  http://purl.jp/bio/01/quanto/sos#meanBaseCallQuality
 :meanBaseCallQuality rdf:type owl:Class ;
                      rdfs:subClassOf :PhredQualityScore ;
-                     dcterms:description "A Mean Base Call Quality is a sequence statistic that represents the mean value of Phred quality score in the all base calls of a sequence data." ;
+                     dcterms:description "A meanBaseCallQuality is a sequence statistic that represents the mean value of Phred quality score in the all base calls of a sequence data." ;
                      rdfs:label "Mean Base Call Quality" .
 
 
 ###  http://purl.jp/bio/01/quanto/sos#meanSequenceLength
 :meanSequenceLength rdf:type owl:Class ;
                     rdfs:subClassOf :SequenceReadLength ;
-                    dcterms:description "A Mean Sequence Length is a sequence statistic that represents the mean length of sequence reads in a sequencing data." ;
+                    dcterms:description "A meanSequenceLength is a sequence statistic that represents the mean length of sequence reads in a sequencing data." ;
                     rdfs:label "Mean Sequence Length" .
 
 
 ###  http://purl.jp/bio/01/quanto/sos#medianBaseCallQuality
 :medianBaseCallQuality rdf:type owl:Class ;
                        rdfs:subClassOf :PhredQualityScore ;
-                       dcterms:description "A Median Base Call Quality is a sequence statistic that represents the median value of Phred quality score in the all base calls of a sequence data." ;
+                       dcterms:description "A medianBaseCallQuality is a sequence statistic that represents the median value of Phred quality score in the all base calls of a sequence data." ;
                        rdfs:label "Median Base Call Quality" .
 
 
 ###  http://purl.jp/bio/01/quanto/sos#medianSequenceLength
 :medianSequenceLength rdf:type owl:Class ;
                       rdfs:subClassOf :SequenceReadLength ;
-                      dcterms:description "A Median Sequence Length is a sequence statistic that represents the median length of sequence reads in a sequencing data." ;
+                      dcterms:description "A medianSequenceLength is a sequence statistic that represents the median length of sequence reads in a sequencing data." ;
                       rdfs:label "Median Sequence Length" .
 
 
 ###  http://purl.jp/bio/01/quanto/sos#minimumSequenceLength
 :minimumSequenceLength rdf:type owl:Class ;
                        rdfs:subClassOf :SequenceReadLength ;
-                       dcterms:description "A Minimum Sequence Length is a sequence statistic that represents the minimum length of sequence reads in a sequencing data." ;
+                       dcterms:description "A minimumSequenceLength is a sequence statistic that represents the minimum length of sequence reads in a sequencing data." ;
                        rdfs:label "Minimum Sequence Length" .
 
 
 ###  http://purl.jp/bio/01/quanto/sos#nContent
 :nContent rdf:type owl:Class ;
           rdfs:subClassOf :BaseRatio ;
-          dcterms:description "A N Content is a sequence statistic that represents ratio of N, which means a failure of base calling of DNA sequencing in FASTQ format, in the all sequenced bases." ;
+          dcterms:description "A nContent is a sequence statistic that represents ratio of N, which means a failure of base calling of DNA sequencing in FASTQ format, in the all sequenced bases." ;
           rdfs:label "N Content" .
 
 
 ###  http://purl.jp/bio/01/quanto/sos#percentGC
 :percentGC rdf:type owl:Class ;
            rdfs:subClassOf :BaseRatio ;
-           dcterms:description "A Percent GC is a sequence statistic that represents a ratio of G and C, which means Guanine and Cytosine in FASTQ format, respectively, in the all sequenced bases." ;
+           dcterms:description "A percentGC is a sequence statistic that represents a ratio of G and C, which means Guanine and Cytosine in FASTQ format, respectively, in the all sequenced bases." ;
            rdfs:label "Percent GC" .
 
 
 ###  http://purl.jp/bio/01/quanto/sos#totalSequences
 :totalSequences rdf:type owl:Class ;
                 rdfs:subClassOf :SequenceReadAmount ;
-                dcterms:description "A Total Sequences is a sequence statistic that represents the total amount of sequence reads in a calculated sequencing data." ;
+                dcterms:description "A totalSequences is a sequence statistic that represents the total amount of sequence reads in a calculated sequencing data." ;
                 rdfs:label "Total Sequences" .
 
 
