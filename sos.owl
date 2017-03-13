@@ -5,74 +5,69 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://purl.jp/bio/01/quanto/sos">
-    <Prefix name="" IRI="http://purl.jp/bio/01/quanto/sos#"/>
-    <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
+     ontologyIRI="http://purl.jp/bio/01/quanto/sos"
+     versionIRI="http://purl.jp/bio/01/quanto/sos/0.4.0">
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Import>http://dublincore.org/2012/06/14/dcterms.rdf</Import>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:creator"/>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tazro Ohta</Literal>
+        <AnnotationProperty abbreviatedIRI="dcterms:modified"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2017-03-13</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:modified"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2017-02-28</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Currently defined terms are suitable for statistics calculated by FastQC, will be expanded to other methods and softwares in future.</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The sequence statistics ontology (SOS) provides terms for statistics of high-throughput DNA sequencing data, including number of sequence reads, length of sequence reads, and base call accuracy.</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:rights"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">free to use, share, modify. modify with attribution [http://creativecommons.org/licenses/by/4.0/].</Literal>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Sequence Statistics Ontology (SOS)</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;0.3.0&quot;</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.4.0</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sequence Statistics Ontology (SOS)</Literal>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The sequence statistics ontology (SOS) provides terms for statistics of high-throughput DNA sequencing data, including number of sequence reads, length of sequence reads, and base call accuracy.</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:license"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tazro Ohta</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://creativecommons.org/licenses/by/4.0/</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#medianSequenceLength"/>
+        <DataProperty IRI="#fastqcVersion"/>
     </Declaration>
     <Declaration>
         <Class IRI="#BaseRatio"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#medianSequenceLength"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#fileType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#percentGC"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PhredQualityScore"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:rights"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#filteredSequences"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#filename"/>
+        <Class IRI="#SequenceStatisticsReport"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
+        <DataProperty IRI="#filename"/>
     </Declaration>
     <Declaration>
         <Class IRI="#medianBaseCallQuality"/>
@@ -84,43 +79,13 @@
         <Class IRI="#minimumSequenceLength"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/modified"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#encoding"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#meanBaseCallQuality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SequenceReadAmount"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#fastqcVersion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#percentGC"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:creator"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SequenceStatisticsReport"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:modified"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#nContent"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Class IRI="#SequenceReadLength"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SequenceReadLength"/>
+        <DataProperty IRI="#encoding"/>
     </Declaration>
     <Declaration>
         <Class IRI="#maxSequenceLength"/>
@@ -129,13 +94,28 @@
         <Class IRI="#SequenceQuality"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:license"/>
+        <Class IRI="#meanBaseCallQuality"/>
     </Declaration>
     <Declaration>
         <Class IRI="#meanSequenceLength"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Class IRI="#SequenceReadAmount"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#BaseRatio"/>
@@ -152,10 +132,6 @@
     <SubClassOf>
         <Class IRI="#SequenceReadLength"/>
         <Class IRI="#SequenceQuality"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SequenceStatisticsReport"/>
-        <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#filteredSequences"/>
@@ -230,69 +206,69 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#BaseRatio</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A BaseRatio is a sequence quality that describes the statistics represented by ratio in nucleotide base resolution.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Base Ratio is a sequence statistic described by ratio in nucleotide base resolution.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#BaseRatio</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BaseRatio</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Base Ratio</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#PhredQualityScore</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A PhredQualityScore is a sequence quality that represents accuracy of base call of DNA sequencing data in Phred quality score.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Phred Quality Score is a sequence statistic that represents accuracy of base call of DNA sequencing data in Phred quality score.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#PhredQualityScore</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PhredQualityScore</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Phred Quality Score</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#SequenceQuality</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A SequenceQuality is an attribute that is associated with a quantitative value calculated from high-throughput sequencing data.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Sequence Quality is an attribute that is associated with a quantitative value calculated from high-throughput sequencing data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SequenceQuality</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SequenceQuality</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sequence Quality</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#SequenceReadAmount</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A SequenceReadAmount is a sequence quality that represents number of sequence reads.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Sequence Read Amount is a sequence statistic that represents number of sequence reads.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SequenceReadAmount</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SequenceReadAmount</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sequence Read Amount</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#SequenceReadLength</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A SequenceReadLength is a sequence quality that represents length of sequence read.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Sequence Read Length is a sequence statistic that represents length of sequence read.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SequenceReadLength</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SequenceReadLength</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sequence Read Length</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#SequenceStatisticsReport</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A SequenceStatisticsReport is an entity that contains the summary of quantitative information of sequencing data.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sequence Statistics Report is an entity that contains the summary of quantitative information of DNA sequencing data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SequenceStatisticsReport</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SequenceStatisticsReport</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sequence Statistics Report</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#encoding</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relation between a SequenceStatisticsReport and a string value representing quality encoding format of fastq data.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relation between a SequenceStatisticsReport and a string value representing quality encoding format of FASTQ data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -300,143 +276,135 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">encoding</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#fastqcVersion</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relation between a SequenceStatisticsReport and a value representing the version of FastQC, the software to calculate statistics of sequence data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#fastqcVersion</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">fastqcVersion</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">fastqc version</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#fileType</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relation between a SequenceStatisticsReport and a file type of the calculated fastq file that represents whether its content was base call or colorspace.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relation between a SequenceStatisticsReport and the file type of the FASTQ file (e.g. base call or colorspace).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#fileType</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">fileType</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">file type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#filename</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relation between a SequenceStatisticsReport and a name of the file that contained the sequencing data calculated statistics.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relation between a Sequence Statistics Report and the name of the file that contains the sequencing data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#filename</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">filename</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">filename</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#filteredSequences</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A filteredSequences is a sequence quality that represents the amount of sequence reads filtered during the sequence statistics calculation.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Filtered Sequences is a sequence statistic that represents the amount of sequence reads filtered during the sequence statistics calculation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#filteredSequences</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">filteredSequences</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Filtered Sequences</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#maxSequenceLength</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A maxSequenceLength is a sequence quality that represents the maximum length of sequence reads in a sequencing data.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Maximum Sequence Length is a sequence statistic that represents the maximum length of sequence reads in a sequencing data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#maxSequenceLength</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">maxSequenceLength</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Maximum Sequence Length</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#meanBaseCallQuality</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A meanBaseCallQuality is a sequence quality that represents the mean value of phred quality score in the all base calls of a sequence data.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Mean Base Call Quality is a sequence statistic that represents the mean value of Phred quality score in the all base calls of a sequence data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#meanBaseCallQuality</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">meanBaseCallQuality</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mean Base Call Quality</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#meanSequenceLength</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A meanSequenceLength is a sequence quality that represents the mean length of sequence reads in a sequencing data.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Mean Sequence Length is a sequence statistic that represents the mean length of sequence reads in a sequencing data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#meanSequenceLength</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">meanSequenceLength</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mean Sequence Length</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#medianBaseCallQuality</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A medianBaseCallQuality is a sequence quality that represents the median value of phred quality score in the all base calls of a sequence data.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Median Base Call Quality is a sequence quality that represents the median value of Phred quality score in the all base calls of a sequence data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#medianBaseCallQuality</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">medianBaseCallQuality</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Median Base Call Quality</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#medianSequenceLength</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A medianSequenceLength is a sequence quality that represents the median length of sequence reads in a sequencing data.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Median Sequence Length is a sequence statistic that represents the median length of sequence reads in a sequencing data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#medianSequenceLength</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">medianSequenceLength</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Median Sequence Length</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#minimumSequenceLength</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A minimumSequenceLength is a sequence quality that represents the minimum length of sequence reads in a sequencing data.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Minimum Sequence Length is a sequence statistic that represents the minimum length of sequence reads in a sequencing data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#minimumSequenceLength</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">minimumSequenceLength</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Minimum Sequence Length</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#nContent</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A nContent is a sequence quality that represents ratio of N, which means a failure of base calling of DNA sequencing in fastq format, in the all sequenced bases.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A N Content is a sequence statistic that represents ratio of N, which means a failure of base calling of DNA sequencing in FASTQ format, in the all sequenced bases.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#nContent</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">nContent</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">N Content</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#percentGC</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A percentGC is a sequence quality that represents a ratio of G and C, which means Guanine and Cytosine in fastq format, respectively, in the all sequenced bases.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Percent GC is a sequence statistic that represents a ratio of G and C, which means Guanine and Cytosine in FASTQ format, respectively, in the all sequenced bases.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#percentGC</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">percentGC</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Percent GC</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#totalSequences</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A totalSequences is a sequence quality that represents the total amount of sequence reads in a calculated sequencing data.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Total Sequences is a sequence statistic that represents the total amount of sequence reads in a calculated sequencing data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#totalSequences</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">totalSequences</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Total Sequences</Literal>
     </AnnotationAssertion>
-    <AnnotationPropertyRange>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
-        <AbbreviatedIRI>xsd:anyURI</AbbreviatedIRI>
-    </AnnotationPropertyRange>
-    <AnnotationPropertyRange>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/modified"/>
-        <AbbreviatedIRI>xsd:dateTime</AbbreviatedIRI>
-    </AnnotationPropertyRange>
 </Ontology>
 
 
